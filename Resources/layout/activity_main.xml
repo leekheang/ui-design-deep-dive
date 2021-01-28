@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -11,12 +12,14 @@
         android:layout_height="0dp"
         android:layout_weight="0.2">
         <RelativeLayout
+            android:background="@drawable/roundededges"
             android:padding="10dp"
-            android:background="#e2e2e2"
+            android:elevation="4dp"
             android:layout_centerInParent="true"
             android:layout_width="match_parent"
             android:layout_height="90dp">
-            <ImageView 
+            <de.hdodenhof.circleimageview.CircleImageView 
+                
                 android:id="@+id/profileImage"
                 android:layout_centerVertical="true"
                 android:src="@drawable/kheang2d"
@@ -27,6 +30,7 @@
                 android:id="@+id/nameTextView"
                 android:text="Lee kheang"
                 android:layout_toRightOf="@+id/profileImage"
+                android:layout_marginLeft="15dp"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
@@ -35,6 +39,7 @@
                 android:id="@+id/PlaceTextView"
                 android:layout_below="@+id/nameTextView"
                 android:layout_toRightOf="@+id/profileImage"
+                android:layout_marginLeft="15dp"
                 android:text="Phnom Penh, KH"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -47,6 +52,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"/>
             <LinearLayout
+                android:layout_marginLeft="15dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@+id/profileImage"
                 android:layout_below="@+id/PlaceTextView"
@@ -54,20 +60,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
+                    android:tint="@color/colorOrange"
                     android:src="@drawable/star"
                     android:layout_width="15dp"
                     android:layout_height="15dp"/>
                 <ImageView
+                    android:tint="@color/colorOrange"
                     android:layout_marginLeft="5dp"
                     android:src="@drawable/star"
                     android:layout_width="15dp"
                     android:layout_height="15dp"/>
                 <ImageView
+                    android:tint="@color/colorOrange"
                     android:layout_marginLeft="5dp"
                     android:src="@drawable/star"
                     android:layout_width="15dp"
                     android:layout_height="15dp"/>
                 <ImageView
+                    android:tint="@color/colorOrange"
                     android:layout_marginLeft="5dp"
                     android:src="@drawable/star"
                     android:layout_width="15dp"
