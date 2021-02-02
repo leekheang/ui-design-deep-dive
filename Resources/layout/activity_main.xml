@@ -28,15 +28,18 @@
                 android:layout_height="65dp" />
             <TextView
                 android:id="@+id/nameTextView"
+                fontPath="fonts/Roboto-Bold.ttf" 
                 android:text="Lee kheang"
                 android:layout_toRightOf="@+id/profileImage"
                 android:layout_marginLeft="15dp"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                />
             <TextView
                 android:id="@+id/PlaceTextView"
+                fontPath="fonts/HachiMaruPop-Regular.ttf" 
                 android:layout_below="@+id/nameTextView"
                 android:layout_toRightOf="@+id/profileImage"
                 android:layout_marginLeft="15dp"
@@ -98,6 +101,7 @@
         android:layout_height="0dp"
         android:layout_weight="0.22">
         <TextView
+            fontPath="fonts/Roboto-Bold.ttf" 
             android:id="@+id/balanceTextView"
             android:text="$32,405,00"
             android:textStyle="bold"
@@ -131,6 +135,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"/>
             <TextView
+                fontPath="fonts/Roboto-Bold.ttf" 
                 android:id="@+id/DescriptionTextView"
                 android:layout_toRightOf="@+id/friendImageView"
                 android:layout_marginLeft="10dp"
@@ -179,6 +184,7 @@
             <TextView
                 android:id="@+id/Description1TextView"
                 android:layout_toRightOf="@+id/friend1ImageView"
+                fontPath="fonts/Roboto-Bold.ttf" 
                 android:layout_marginLeft="10dp"
                 android:text="Deposit to Kheang"
                 android:textStyle="bold"
@@ -225,6 +231,7 @@
             <TextView
                 android:id="@+id/Description3TextView"
                 android:layout_toRightOf="@+id/friend3ImageView"
+                fontPath="fonts/Roboto-Bold.ttf" 
                 android:layout_marginLeft="10dp"
                 android:text="Deposit to Panha"
                 android:textStyle="bold"
@@ -255,6 +262,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
+        </RelativeLayout>
+        <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                   <Button 
+                    android:drawableLeft="@drawable/history"
+                    android:background="@drawable/roundedbutton"
+                    android:textAllCaps="false"
+                    android:text="View History"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"/>
+                   <Button
+                    android:background="@drawable/roundedbutton"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="5dp"
+                    android:text="New Transation"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"/>
+               </LinearLayout>
         </RelativeLayout>
     </LinearLayout>
     
